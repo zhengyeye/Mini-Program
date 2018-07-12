@@ -1,0 +1,36 @@
+/* pages/abouthim/abouthim.wxss */
+
+.him-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.him-img image {
+  width: 100%;
+}
+
+.him-desc {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2rpx;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.text-image {
+  display: flex;
+  flex-direction: 'column';
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.image-desc {
+  flex: 2;
+  padding: 20rpx 5px 15rpx 10px;
+  letter-spacing: 2rpx;
+}
+
+.text-end {
+  margin-top: 15rpx;
+}

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/abouthim/abouthim",
+    "pages/aboutus/usdetails/usdetails",
+    "pages/logs/logs",
+      "pages/aboutus/aboutus",
+    "libs/bmap-wx/bmap-wx.min.js"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "turbobo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#d81e06",
+    "borderStyle": "#d81e06",
+    "list": [
+      {
+        "selectedIconPath": "images/he-red.png",
+        "iconPath": "images/he.png",
+        "pagePath": "pages/abouthim/abouthim",
+        "text": "关于他"
+      },
+      {
+        "selectedIconPath": "images/others-red.png",
+        "iconPath": "images/others.png",
+        "pagePath": "pages/index/index",
+        "text": "Hi"
+      },
+      {
+        "selectedIconPath": "images/we-red.png",
+        "iconPath": "images/we.png",
+        "pagePath": "pages/aboutus/aboutus",
+        "text": "我和他"
+      }
+    ]
+  }
+}

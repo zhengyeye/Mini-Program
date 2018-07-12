@@ -1,0 +1,15 @@
+<!--pages/aboutus/aboutus.wxml-->
+<!-- 相对路径 -->
+<import src="post-item/post-item-template.wxml" />
+<!-- 绝对路径 -->
+<!-- <import src="/pages/aboutus/post-item/post-item-template.wxml" />  -->
+<view class='us-container'>
+  <view class='us-desc'>我叫叶叶，他叫子博。这个小程序是我送给他的生日礼物；尽管做的有点不太完美，但依旧希望子博哥看见这份礼物的时候，能会心一笑^_^
+  </view>
+  <block wx:for="{{post_container}}" wx:key='{{index}}' wx:for-item="item" wx:for-index="index">
+    <!-- 用template改写 is属性 代表模板的name值  ...代表把对象展开、平铺-->
+    <view bindtap='usDetails' data-myid="{{item.id}}">
+      <template is="post-item" data="{{...item}}" />
+    </view>
+  </block>
+</view>

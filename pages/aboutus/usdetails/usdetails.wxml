@@ -1,0 +1,20 @@
+<!-- 先静后动，先样式再数据  -->
+<view class='usdetails-container'>
+  <image class='head-img' mode="cover" src="{{postData.headimg}}" data-mysrc ="{{postData.headimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}}" bindtap='bigimgsrc'></image>
+
+  <view class='head-desc'>
+    <text class='head-title'>{{postData.headtitle}}</text>
+    <text class='desc'>{{postData.desc}}</text>
+  </view>
+
+  <view class='separate-line'></view>
+
+  <view class='text-image'>
+    <image style="flex:1;height:340rpx;width:200rpx" src="{{postData.columnimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}}" data-mysrc="{{postData.columnimg}}" bindtap='bigimgsrc'></image>
+    <view class='image-desc'>
+      <text>
+        {{postData.columndesc}}
+      </text>
+    </view>
+  </view>
+</view>

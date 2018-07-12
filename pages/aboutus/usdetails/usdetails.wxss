@@ -1,0 +1,42 @@
+.usdetails-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-img {
+  width: 100%;
+  height: 450rpx;
+}
+
+.text-image {
+  display: flex;
+  flex-direction: 'column';
+  margin-top: 15rpx;
+}
+
+.head-desc {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2rpx;
+}
+
+.head-title {
+  font-size: 45rpx;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2rpx;
+}
+
+.desc {
+  padding: 10rpx 0 25rpx 10px;
+  letter-spacing: 2rpx;
+}
+
+.image-desc {
+  flex: 2;
+  padding: 0 0 5rpx 10px;
+  letter-spacing: 2rpx;
+}

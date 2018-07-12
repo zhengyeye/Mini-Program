@@ -1,0 +1,10 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='welcome-container'>
+  <view class='welcomImg'>
+     <image style="width: 100%; min-height: 100%;"  mode="widthFix" src='/images/bg.png'> 
+    </image>
+  </view>
+  <!-- <view class='welcombutton' bindtap="bindViewTap">
+    <text class='welcomtext'>生日快乐</text>
+  </view> -->
+</view>

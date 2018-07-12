@@ -1,0 +1,56 @@
+/**index.wxss**/
+
+.user {
+  border-bottom: 2px solid lightgrey;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-left: 30rpx;
+  padding-bottom: 10rpx;
+}
+
+.userinfo button {
+  border-radius: 30rpx;
+  background-color: pink;
+  color: lightgoldenrodyellow;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin: 35rpx;
+}
+
+.address {
+  margin-left: 30rpx;
+  margin-bottom: 15rpx;
+}
+
+/* 轮播图 */
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  padding-top: 30rpx;
+}
+
+.wishes {
+  align-items: center;
+}
+
+.wishes-start {
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.end-container {
+  margin-left: 30rpx;
+  margin-right: 15rpx;
+}

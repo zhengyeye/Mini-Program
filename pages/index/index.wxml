@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="user">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'http://static-test.gangguwang.com/image/2018/7/8/8/2/5b41c532f667ea0009000b5b.jpg'}}" mode="cover"></image>
+      <text class="userinfo-nickname">我是{{userInfo.nickName?userInfo.nickName:'大神'}}</text>
+    </block>
+  </view>
+  <view class='address'>我在{{address?address:'拉斯维加斯520街道1314号'}}</view>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='wishes-start'>
+  <text class='wishes'>祝：小哥哥26岁生日快乐！</text>
+</view>
+
+<view class='end-container'>
+  <text class='wishes-end'>
+    (｡･ω･｡)ﾉ♡也许你是无意之中点进来看见的
+
+    也许你是我们认识的好朋友特地点赞的
+
+    也许你是从天而降的小惊喜
+
+    我们希望看到这里的小伙伴们都能收获
+    属于自己满满的小确幸(｡･ω･｡)ﾉ♡
+  </text>
+</view>

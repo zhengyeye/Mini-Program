@@ -1,0 +1,11 @@
+<template name="post-item">
+  <view class='separate-line'></view>
+   <!-- bindtap='usDetails'事件有两种绑定方式：一种在这，一种在aboutus.wxml中 -->
+  <!-- <view class='text-image' bindtap='usDetails'> -->
+   <view class='text-image'>
+    <view class='image-desc'>
+      <text>{{title}}</text>
+    </view>
+    <image mode="cover" src="{{imgurl}}"></image>
+  </view>
+</template>
