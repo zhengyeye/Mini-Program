@@ -1,6 +1,6 @@
 <!-- 先静后动，先样式再数据  -->
 <view class='usdetails-container'>
-  <image class='head-img' mode="cover" src="{{postData.headimg}}" data-mysrc ="{{postData.headimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}}" bindtap='bigimgsrc'></image>
+  <image class='head-img' mode="cover" src="{{postData.headimg}}" data-mysrc="{{postData.headimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}},{{postData.lastimg}}" bindtap='bigimgsrc'></image>
 
   <view class='head-desc'>
     <text class='head-title'>{{postData.headtitle}}</text>
@@ -16,5 +16,12 @@
         {{postData.columndesc}}
       </text>
     </view>
+  </view>
+
+  <view class='separate-line'></view>
+
+  <view class='head-desc'>
+    <text class='desc'>{{postData.lastdesc}}</text>
+    <image class='head-img' mode="cover" src="{{postData.lastimg}}" data-mysrc="{{postData.lastimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}},{{postData.lastimg}}" bindtap='bigimgsrc'></image>
   </view>
 </view>

@@ -5,7 +5,8 @@
     "pages/abouthim/abouthim",
     "pages/aboutus/usdetails/usdetails",
     "pages/logs/logs",
-      "pages/aboutus/aboutus",
+    "pages/aboutus/aboutus",
+    "pages/comments/comments",
     "libs/bmap-wx/bmap-wx.min.js"
   ],
   "window": {
@@ -28,8 +29,7 @@
       {
         "selectedIconPath": "images/others-red.png",
         "iconPath": "images/others.png",
-        "pagePath": "pages/index/index",
-        "text": "Hi"
+        "pagePath": "pages/index/index"
       },
       {
         "selectedIconPath": "images/we-red.png",

@@ -1,0 +1,22 @@
+<!--pages/comments/comments.wxml-->
+<view>
+
+  <!-- 留言 -->
+  <view class='comments-box'>
+    <input class='comments-input' placeholder='写点什么吧……' placeholder-class='placeholder-class' type="text" bindinput="getValue" value='{{inputVal}}'></input>
+    <button type='primary' plain='true' class="comments-button" size="mini" bindtap='addcomments'>留言</button>
+  </view>
+
+  <!-- 留言列表 -->
+  <block wx:if="{{commentsData.length==0}}">
+    <text class='msg-info'>哦呦~还没宝宝留言……</text>
+  </block>
+
+  <view class='comments-list'>
+    <view class='item' wx:for="{{commentsData}}" wx:key='{{value}}'>
+      <text class='msg-info'>{{item.msg}}</text>
+    </view>
+  </view>
+
+
+</view>

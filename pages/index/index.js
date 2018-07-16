@@ -19,25 +19,32 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
 
     imgUrls: [
-      'http://static.gangguwang.com/image/2018/7/8/13/20/5b419f0210f4e8000900109a.jpg',
-      'http://static.gangguwang.com/image/2018/7/8/13/46/5b41a54c10f4e800090010a2.jpg',
-      'http://static.gangguwang.com/image/2018/7/8/13/43/5b41a49210f4e800090010a0.png'
+      'http://static.gangguwang.com/image/2018/7/16/17/36/5b4c670610f4e8000900277e.jpg',
+      // 'http://static.gangguwang.com/image/2018/7/8/13/20/5b419f0210f4e8000900109a.jpg',
+      // 'http://static.gangguwang.com/image/2018/7/8/13/46/5b41a54c10f4e800090010a2.jpg',
+      // 'http://static.gangguwang.com/image/2018/7/8/13/43/5b41a49210f4e800090010a0.png'
     ],
-    indicatorDots: true, //是否显示面板指示点
+    indicatorDots: false, //是否显示面板指示点
     autoplay: true, //是否自动切换
     interval: 4000, //自动切换时间间隔
     duration: 500 //滑动动画时长
   },
-  //事件处理函数
-  bindViewTap: function() {
+
+  comments :function (event) {
+    console.log('comment page');
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../comments/comments'
     })
-  },
+  }, 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    wx.playBackgroundAudio({
+      dataUrl: 'http://static.gangguwang.com/file/2018/7/7/18/3/5b408ffa10f4e8000900107a.mp3',//封面图片地址和音乐文件地址必须为网络地址
+      title: '刚好遇见你',//标题
+      coverImgUrl: 'http://static.gangguwang.com/image/2018/7/7/18/2/5b408fa410f4e80009001079.jpg'//封面URL
+    });
     var that = this;
     /* 获取定位地理位置 */
     // 新建bmap对象   
@@ -89,60 +96,15 @@ Page({
       })
     }
   },
+
+  onShow:function(){
+    
+  },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
   }
 })

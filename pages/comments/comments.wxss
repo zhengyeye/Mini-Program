@@ -1,0 +1,41 @@
+/* pages/comments/comments.wxss */
+
+.comments-box {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.comments-input {
+  border: 1rpx solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+.comments-button {
+  width: 50%;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.placeholder-class {
+  color: #f60;
+}
+
+.msg-info {
+  display: block;
+  margin: 30px;
+  color: #f60;
+}
+
+.comments-list {
+  border: 1px dotted #399;
+  /* margin: 20px  */
+}
+
+.item {
+  border-bottom: 1px dotted #ccc;
+  height: 50px;
+  line-height: 50px;
+}
