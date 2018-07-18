@@ -35,5 +35,5 @@
   </text>
 </view>
 <view class='comments-view'>
-  <text bindtap='comments'>留言列</text>
+  <!-- <text bindtap='comments'>留言列</text> -->
 </view>

@@ -3,7 +3,7 @@
 
   <!-- 留言 -->
   <view class='comments-box'>
-    <input class='comments-input' placeholder='写点什么吧……' placeholder-class='placeholder-class' type="text" bindinput="getValue" value='{{inputVal}}'></input>
+    <input class='comments-input' placeholder='只有你可以看见的留言……' placeholder-class='placeholder-class' type="text" bindinput="getValue" value='{{inputVal}}'></input>
     <button type='primary' plain='true' class="comments-button" size="mini" bindtap='addcomments'>留言</button>
   </view>
 

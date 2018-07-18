@@ -10,7 +10,7 @@
   <view class='separate-line'></view>
 
   <view class='text-image'>
-    <image style="flex:1;height:340rpx;width:200rpx" src="{{postData.columnimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}}" data-mysrc="{{postData.columnimg}}" bindtap='bigimgsrc'></image>
+    <image style="flex:1;height:340rpx;width:200rpx" src="{{postData.columnimg}}" data-imglist="{{postData.headimg}},{{postData.columnimg}},{{postData.lastimg}}" data-mysrc="{{postData.columnimg}}" bindtap='bigimgsrc'></image>
     <view class='image-desc'>
       <text>
         {{postData.columndesc}}

@@ -13,11 +13,12 @@
 }
 
 .userinfo button {
-  width: 128rpx;
-  height: 128rpx;
+  width: 100rpx;
+  height: 100rpx;
   border-radius: 50%;
-  color: lightslategray;
-  padding-top: 20rpx;
+  padding-top: 5rpx;
+  background-color: lightsalmon;
+  color: #fff
 }
 
 .userinfo-avatar {
