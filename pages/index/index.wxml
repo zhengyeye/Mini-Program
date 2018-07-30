@@ -24,15 +24,26 @@
 
 <view class='end-container'>
   <text class='wishes-end'>
-    (｡･ω･｡)ﾉ♡也许你是无意之中点进来看见的
+    (⑉°з°)-♡也许你是无意之中点进来看见的
 
     也许你是我们认识的好朋友特地点赞的
 
-    也许你是从天而降的外星人
+    也许你是从天而降的一亿颗星星
 
-    我们希望看到这里的小伙伴们都能收获
-    属于自己满满的小确幸(｡･ω･｡)ﾉ♡
+    叶叶希望看到这里的小伙伴们都能收获
+    属于自己满满的小确幸(⑉°з°)-♡
+
   </text>
+  <view class="v-body">
+    <view class="v-canvas">
+        <canvas canvas-id="canvas_wi" style="{{canvas_style}}" class="myCanvas"/>
+    </view>
+    <view class="v-img">
+        <image src="{{iszan?'/images/heart_button.png':'/images/heart.png'}}" class="bt-img" bindtap="onClickImage" style="{{style_img}}"></image>
+    </view>
+    
+</view>
+  <text style="font-size: 10px;" bindtap="clearstorage">如果想要再次尝试点赞效果，请点击此处并退出重进~</text>
 </view>
 <view class='comments-view'>
   <!-- <text bindtap='comments'>留言列</text> -->

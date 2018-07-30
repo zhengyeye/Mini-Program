@@ -1,7 +1,7 @@
 /**index.wxss**/
 
 .user {
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid lightgoldenrodyellow;
 }
 
 .userinfo {
@@ -54,6 +54,7 @@
 }
 
 .end-container {
+  flex-direction: row;
   margin-left: 30rpx;
   margin-right: 15rpx;
 }
@@ -70,4 +71,44 @@
 .comments-view text{
    border: 1px solid #eef;
    background-color: #f60
+}
+
+.v-body{
+    display: flex;
+    position: relative;
+    
+}
+
+.myCanvas{
+  background-color: transparent;
+  width: 90px;
+  height:400px;
+}
+
+.v-canvas{
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    width: 90px;
+    background-color: transparent;
+}
+
+.v-img{
+  position: fixed;
+  right: 45px;
+  bottom: 30px;
+}
+
+.bt-img{
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition:ease all;
+  -moz-transition:ease all;
+  transition:ease all;
+  -webkit-transition-duration:700ms;
+  -moz-transition-duration:700ms;
+  transition-duration:700ms;
+  
 }
