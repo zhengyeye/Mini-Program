@@ -14,5 +14,5 @@ page {
 /* 分隔线 */
 .separate-line {
   height: 5rpx;
-  background-color: lightgrey;
+  background-color: lightgoldenrodyellow;
 }

@@ -32,7 +32,8 @@ Page({
     style_img: '',
 
     imgUrls: [
-      'http://static.gangguwang.com/image/2018/7/16/17/36/5b4c670610f4e8000900277e.jpg',
+      'http://static.gangguwang.com/image/2018/7/30/17/3/5b5ed47910f4e80009004dcd.png',
+      // 'http://static.gangguwang.com/image/2018/7/16/17/36/5b4c670610f4e8000900277e.jpg',
       // 'http://static.gangguwang.com/image/2018/7/8/13/20/5b419f0210f4e8000900109a.jpg',
       // 'http://static.gangguwang.com/image/2018/7/8/13/46/5b41a54c10f4e800090010a2.jpg',
       // 'http://static.gangguwang.com/image/2018/7/8/13/43/5b41a49210f4e800090010a0.png'
